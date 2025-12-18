@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-50 antialiased min-h-screen;
+  }
+}
+
+@layer utilities {
+  .card-surface {
+    @apply rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900/80 via-slate-950 to-slate-900/80 shadow-2xl shadow-emerald-500/20;
+  }
+
+  .field-label {
+    @apply text-xs font-medium uppercase tracking-wide text-slate-300;
+  }
+
+  .field-hint {
+    @apply text-[0.7rem] text-slate-500;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full border border-slate-700 bg-slate-900/80 px-2 py-0.5 text-xs font-medium text-slate-100;
+  }
+}
+
